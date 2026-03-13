@@ -1,0 +1,34 @@
+.ant-spin {
+  &.white {
+    .ant-spin-dot-item {
+      @apply bg-white;
+    }
+
+    &.hover {
+      &.dark-blue {
+        .ant-spin-dot-item {
+          @apply group-hover:bg-dark-blue;
+        }
+      }
+      &.danger-red {
+        .ant-spin-dot-item {
+          @apply group-hover:bg-danger-red;
+        }
+      }
+      &.golden {
+        .ant-spin-dot-item {
+          @apply group-hover:bg-[#FFD700];
+        }
+      }
+      &.green {
+        .ant-spin-dot-item {
+          @apply group-hover:bg-success-green;
+        }
+      }
+    }
+  }
+
+  .ant-spin-dot-item {
+    @apply bg-dark-blue;
+  }
+}

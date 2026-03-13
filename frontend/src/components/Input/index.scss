@@ -1,0 +1,44 @@
+.ant-slider-track {
+  @apply bg-dark-blue #{!important};
+}
+
+.ant-slider-handle::after {
+  @apply shadow-[0_0_0_2px] #{!important};
+  @apply shadow-dark-blue #{!important};
+}
+.ant-slider-handle:hover::after,
+.ant-slider-handle:focus::after {
+  @apply shadow-[0_0_0_4px] #{!important};
+  @apply shadow-dark-blue #{!important};
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  @apply bg-dark-blue #{!important};
+  @apply border-dark-blue #{!important};
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner {
+  @apply bg-dark-blue #{!important};
+  @apply border-dark-blue #{!important};
+}
+.ant-checkbox-checked:hover .ant-checkbox-checked .ant-checkbox-inner {
+  @apply bg-dark-blue #{!important};
+  @apply border-dark-blue #{!important};
+}
+.ant-checkbox-checked:after {
+  @apply border-dark-blue #{!important};
+}
+.ant-checkbox:hover::after {
+  @apply border-dark-blue #{!important};
+}
+.ant-checkbox:hover .ant-checkbox-inner {
+  @apply border-dark-blue #{!important};
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner {
+  @apply border-dark-blue #{!important};
+}
+
+.ant-checkbox-disabled .ant-checkbox-inner:after {
+  @apply border-white #{!important};
+}

@@ -1,0 +1,11 @@
+#nprogress .bar {
+  @apply h-1;
+}
+
+#nprogress .bar {
+  @apply bg-dark-blue;
+}
+
+#nprogress .spinner-icon {
+  @apply border-t-dark-blue border-l-dark-blue;
+}
