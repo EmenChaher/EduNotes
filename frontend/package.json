@@ -11,9 +11,9 @@
   "author": "Mohamed Ghassen Hammami & SoftyLines",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "node init && vite --host",
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc && vite build",
+    "build": "node init && npm run clean && tsc && vite build",
     "serve": "npm run build && serve -s dist",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
