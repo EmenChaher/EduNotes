@@ -11,7 +11,7 @@
   "author": "Mohamed Ghassen Hammami & SoftyLines",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "node api.js && vite --host",
     "clean": "rimraf dist",
     "build": "npm run clean && tsc && vite build",
     "serve": "npm run build && serve -s dist",

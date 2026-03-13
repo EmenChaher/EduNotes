@@ -14,7 +14,7 @@
     "build": "npm run clean && tsc",
     "serve": "npm run build && node -r ts-node/register/transpile-only -r tsconfig-paths/register -r dotenv/config dist/server.js",
     "check": "ts-node-dev -r tsconfig-paths/register src/helpers/checks.ts",
-    "dev": "ts-node-dev -r tsconfig-paths/register --watch 'src/**/*.ts' -r dotenv/config src/server.ts",
+    "dev": "node api.js && ts-node-dev -r tsconfig-paths/register --watch 'src/**/*.ts' -r dotenv/config src/server.ts",
     "nodemon": "nodemon -r tsconfig-paths/register --watch src/**/*.ts -r dotenv/config src/server.ts",
     "seed": "ts-node-dev -r tsconfig-paths/register -r dotenv/config src/helpers/seeder/index.ts",
     "init": "npm-run-all seed nodemon",
